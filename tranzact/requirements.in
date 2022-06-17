@@ -1,0 +1,16 @@
+Django==4.0.5
+ipython==7.14.0
+django-extensions==2.2.9
+django-pure-pagination==0.3.0
+django-storages==1.9.1
+gunicorn==20.0.4
+boto3==1.13.6
+mysqlclient==1.4.6
+django-environ==0.4.5
+django-mysql==3.5.0
+django-crispy-forms==1.9.0
+xlrd==1.2.0
+social-auth-app-django==3.4.0
+django-role-permissions==3.0.0
+django-braces==1.14.0
+django-cors-headers==3.4.

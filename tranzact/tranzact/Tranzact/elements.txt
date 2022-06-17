@@ -1,0 +1,97 @@
+// Elements
+
+
+CompanyType(Enum):
+		Customer(TZC
+		NSource(NS)
+		NClient(NC)
+
+DocumentType(Enum):
+		PurchaseOrder
+		SalesQuote
+		Invoice
+		OrderConfirmation
+		inwardDocument
+
+BaseModel:
+	created_at
+	updated_at
+
+
+Company -> BaseModel:
+	id
+	Name
+	Address:
+	contact:
+	About
+
+
+Product -> BaseModel:
+	id:
+	name:
+
+
+Document -> BaseModel:
+	name:
+	doc_type:
+
+
+DocumentTypeModelRelation -> BaseModel:
+	enum
+	model(PurchaseOrder, SalesQuotation)
+
+
+Customer -> Company:
+	id:
+	_type:
+	product:
+
+
+NSource -> Company:
+	id:
+	_type:
+	product: (steel)
+
+
+NClient -> Company:
+	id:
+	_type:
+	product_id
+
+
+PurchaseOrder -> Document:
+	cutomer (FK Customer)
+	n_source (FK NClient)
+	quantity
+	rate
+	delivery_date
+	tnc
+
+
+InwardDocument -> Document:
+	cutomer (FK Customer)
+	n_source (FK NClient)
+	purchase_order (FK PurchaseOrder)
+
+
+OrderConfirmation -> Document:
+	cutomer (FK Customer)
+	n_client (FK NClient)
+	quantity
+	rate
+	delivery_date
+	tnc
+
+Invoice -> Document
+	cutomer (FK Customer)
+	n_client (FK NClient)
+	order (FK OrderConfirmation)
+
+
+SalesQuotation -> Document:
+	cutomer (FK Customer)
+	n_client (FK NClient)
+	quantity
+	rate
+	tnc
+
