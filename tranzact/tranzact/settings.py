@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'common',
     'customer',
     'document',
+    'product',
+    'ProductEcomm'
 ]
 
 MIDDLEWARE = [

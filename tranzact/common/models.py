@@ -36,3 +36,10 @@ class Document(BaseModel):
 
     class Meta:
         abstract = True
+
+
+class Product(BaseModel):
+    name = models.CharField(max_length=50)
+
+    class Meta:
+        abstract = True

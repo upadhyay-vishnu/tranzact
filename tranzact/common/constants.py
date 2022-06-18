@@ -17,5 +17,6 @@ class Document(models.TextChoices):
 
 
 class Product(models.TextChoices):
-    STEEL = "Steel", "steel"
-    SPRING = "Spring", "spring"
+    CONSUMER = "consumer", "Consumer"
+    SOURCE = "source", "Source"
+    
