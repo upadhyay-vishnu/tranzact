@@ -1,0 +1,99 @@
+*.py[co]
+*.pyj-cached
+
+# Packages
+*.egg
+*.egg-info
+uploads
+media
+build
+eggs
+parts
+bin
+var
+develop-eggs
+.installed.cfg
+
+# Installer logs
+pip-log.txt
+logs/
+*.log
+
+# Unit test / coverage reports
+.tox
+.log
+.idea
+.DS_Store
+.venv
+
+#Translations
+*.mo
+
+#Mr Developer
+.mr.developer.cfg
+
+#virtual env folder
+env
+.virtualenv
+.env
+
+*/envdir
+base/notebooks/*
+
+dumps/
+dump/
+
+#special files
+ignore*
+node_modules
+main-built*.*
+
+#sublime swap files
+.subl*
+
+#secret files
+secret.txt
+
+#pyenv/virtualenv stuff
+.python-version
+
+*.swp
+*.pyc
+*.sql
+*.sqlite
+*.sqlite3
+venv
+
+# py.test
+*.cache/
+*__pycache__/*
+htmlcov/
+.coverage
+
+# vagrant
+.vagrant/
+.vscode/
+
+# webpack loader cache
+.cache-loader
+webpack-stats.json
+CACHE
+
+
+# NPM, YARN
+node_modules
+yarn.lock
+yarn-error.log
+package-lock.json
+npm-debug.log
+
+# VS Code
+*.vscode
+*.code-workspace
+
+# App specific
+
+staticfiles
+uploadfiles
+dump.rdb
+dev.env
