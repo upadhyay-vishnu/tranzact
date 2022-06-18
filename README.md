@@ -32,7 +32,7 @@
 
   
 ## Sell Purchase
-  TZC purchase Steel from NS and sells Spring to NC
+  Sell Purchase part can be understand as a simple transaction between NS -> TZC and TZC -> NC
 
   <img src="./tranzact/images/products.png" width="384" class="center"/>
 
