@@ -1,4 +1,4 @@
 from django.db import models
 
 # Create your models here.
-from ._models import *
+from ._models import Customer, NClient, NSource

@@ -22,7 +22,7 @@ class BaseModel(models.Model):
 class Company(BaseModel):
     name = models.CharField(max_length=100)
     address = models.CharField(max_length=255, null=True, blank=True)
-    contact = models.PositiveIntegerField()
+    contact = models.BigIntegerField()
     about = models.TextField()
 
     class Meta:
