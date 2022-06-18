@@ -7,9 +7,15 @@ class Company(models.TextChoices):
     NCLIENT = "nc", "NC"
 
 
-class Documet(models.TextChoices):
+class Document(models.TextChoices):
     PURCHASEORDER = "purchase_order", "PurchaseOrder"
     SALESQUOTE = "sales_quote", "SalesQuote"
     INVOICE = "invoice", "Invoice"
     ORDERCONFIRMATION = "order_confirmation", "OrderConfirmation"
     INWARDDOCUMENT = "inward_document", "InwardDocument"
+    TNC = "tnc", "TnC"
+
+
+class Product(models.TextChoices):
+    STEEL = "Steel", "steel"
+    SPRING = "Spring", "spring"

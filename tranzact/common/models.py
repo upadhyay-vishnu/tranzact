@@ -1,5 +1,6 @@
 from django.db import models
 
+from . import constants
 # Create your models here.
 
 class BaseModel(models.Model):
@@ -13,6 +14,25 @@ class BaseModel(models.Model):
                 update_fields.append("modified_on")
             kwargs["update_fields"] = update_fields
         return super(BaseModel, self).save(*args, **kwargs)
+
+    class Meta:
+        abstract = True
+
+
+class Company(BaseModel):
+    name = models.CharField(max_length=100)
+    address = models.CharField(max_length=255, null=True, blank=True)
+    contact = models.PositiveIntegerField()
+    about = models.TextField()
+
+    class Meta:
+        abstract = True
+
+
+class Document(BaseModel):
+    name = models.CharField(max_length=255)
+    doc_type = models.CharField(max_length=50, choices=constants.Document.choices)
+    file = models.FileField(upload_to='document/')
 
     class Meta:
         abstract = True
