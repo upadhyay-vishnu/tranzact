@@ -13,7 +13,7 @@
   ### NS
     A supplier of TZC who sells raw material - steel to TZC
   
-  <img src="images/entities.png" width="128"/>
+  <img src="./tranzact/images/entities.png" width="128"/>
     
 	
 ## Documents
@@ -28,6 +28,6 @@
   ### Inward Document
     A document which is sent by TZC to NS when the goods sent by NS have been received by TZC.It contains the receipt dates.
 
-  <img src="images/documents.png" width="128"/>
+  <img src="./tranzact/images/documents.png" width="128"/>
 
   
