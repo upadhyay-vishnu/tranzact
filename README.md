@@ -31,3 +31,23 @@
   <img src="./tranzact/images/documents.png" width="512" class="center"/>
 
   
+## Sell Purchase
+  TZC purchase Steel from NS and sells Spring to NC
+
+  <img src="./tranzact/images/products.png" width="384" class="center"/>
+
+## Simple Flow Diagram of Process
+  
+  <img src="./tranzact/images/simpleFlowDiagram.png" width="512" class="center"/>
+
+## Model Entity Relationship Overviews
+  <img src="./tranzact/images/RelationShipOverview.png" width="640" class="center"/>
+
+
+## Micro Services 
+  <img src="./tranzact/images/microServices.png" width="640" class="center"/>  
+
+## Technology
+  <img src="./tranzact/images/technology.png" width="640" class="center"/>    
+
+
