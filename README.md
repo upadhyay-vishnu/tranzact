@@ -12,6 +12,8 @@
     A customer of TZC who purchases spring from TZC
   ### NS
     A supplier of TZC who sells raw material - steel to TZC
+
+    <img src="images/entities.png" width="128"/>
     
     
 	
@@ -26,4 +28,7 @@
     A document which is sent by TZC to NC when NC enquires about Rate, Quantity etc for buying spring from TZC. This is just a information document about the details. Once the order is confirmed by NC, Order Confirmation is placed by TZC to NC.
   ### Inward Document
     A document which is sent by TZC to NS when the goods sent by NS have been received by TZC.It contains the receipt dates.
-   
+
+    <img src="images/documents.png" width="128"/>
+    
+  
