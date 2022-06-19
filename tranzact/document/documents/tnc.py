@@ -2,15 +2,16 @@ from django_elasticsearch_dsl import Document
 from django_elasticsearch_dsl.registries import registry
 
 
-from ..models import InwardDocument
+from ..models import TnC
 
-@registry.register_document
-class InwardDocDocument(Document):
+@@egistry.register_document
+class TnCDocument(Document):
     class index:
-        name = 'inward_document'
+        name = 'tnc'
         # See Elasticsearch Indices API reference for available settings
         settings = {'number_of_shards': 1,
                     'number_of_replicas': 1}
 
     class Django:
-        model = InwardDocument
+        model = TnC
+        

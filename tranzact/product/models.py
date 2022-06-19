@@ -16,4 +16,4 @@ class ConsumerProduct(Product):
 	customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
 
 	def __str__(self):
-		return f'{self.ns_client.name}-{self.customer.name}'
+		return f'{self.nc_client.name}-{self.customer.name}'

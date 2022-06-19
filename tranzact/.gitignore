@@ -92,7 +92,7 @@ npm-debug.log
 *.code-workspace
 
 # App specific
-
+static
 staticfiles
 uploadfiles
 dump.rdb

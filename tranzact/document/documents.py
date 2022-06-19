@@ -1,16 +1,20 @@
+# from documents.invoice import InvoiceDocument
+# from documents.inwardDoc import InwardDocumentDocument
+
+
 from django_elasticsearch_dsl import Document
 from django_elasticsearch_dsl.registries import registry
 
 
-from ..models import InwardDocument
+from .models import Invoice
 
 @registry.register_document
-class InwardDocDocument(Document):
+class InvoiceDocument(Document):
     class index:
-        name = 'inward_document'
+        name = 'invoice'
         # See Elasticsearch Indices API reference for available settings
         settings = {'number_of_shards': 1,
                     'number_of_replicas': 1}
 
     class Django:
-        model = InwardDocument
+        model = Invoice

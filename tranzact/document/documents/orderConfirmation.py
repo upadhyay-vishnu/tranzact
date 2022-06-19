@@ -2,11 +2,11 @@ from django_elasticsearch_dsl import Document
 from django_elasticsearch_dsl.registries import registry
 
 
-from .models import OrderConfirmation
+from ..models import OrderConfirmation
 
-@@registry.register_document
+@registry.register_document
 class SalesQuotationDocument(Document):
-    def index():
+    class index:
         name = 'order_confirmation'
         # See Elasticsearch Indices API reference for available settings
         settings = {'number_of_shards': 1,
