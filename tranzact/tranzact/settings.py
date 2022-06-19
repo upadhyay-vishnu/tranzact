@@ -27,6 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["127.0.0.1","localhost"]
 
+ELASTICSEARCH_DSL={
+    'default': {
+        'hosts': 'localhost:9200'
+    },
+}
 
 # Application definition
 
