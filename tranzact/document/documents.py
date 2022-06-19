@@ -18,3 +18,8 @@ class InvoiceDocument(Document):
 
     class Django:
         model = Invoice
+        # fields = [
+        #      'name',
+        #      'tnc_type',
+        #      'version'
+        #  ]
